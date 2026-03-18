@@ -112,6 +112,19 @@ http://localhost/cybersecurity-vulnerable-lab
 
 ---
 
+## Database Setup
+
+1. Create database
+
+CREATE DATABASE vulnerable_lab;
+
+2. Import database
+
+mysql -u root -p vulnerable_lab < vulnerable_lab.sql
+
+3. Configure database connection in config.php
+
+
 ## Educational Purpose Only
 
 This project was created strictly for **educational and cybersecurity training purposes**.
