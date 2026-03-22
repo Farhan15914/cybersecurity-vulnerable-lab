@@ -122,8 +122,28 @@ CREATE DATABASE vulnerable_lab;
 
 mysql -u root -p vulnerable_lab < vulnerable_lab.sql
 
-3. Configure database connection in config.php
+3. Configure Database Connection
 
+Open the file:
+
+config.php
+
+Update the database credentials according to your system:
+
+$host = "localhost";
+$user = "root";
+$password = "";   // Enter your MySQL password if set
+$database = "vulnsite";
+
+Make sure the database name matches the one you created earlier.
+
+#### Notes
+
+- Default MySQL username is: root
+- Password is empty in many Ubuntu setups (or use your own password)
+- Ensure MySQL service is running:
+
+sudo systemctl start mysql
 
 ## Educational Purpose Only
 
